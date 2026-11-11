@@ -1,1 +1,5 @@
 metric_id,metric,value,source_file,reader,threshold,decision
+MT-01,Cycle time P85,7 днів,lr14_metrics/flow.csv,ST-01,більше 10 днів,ріжу обсяг спринта і розбираю чергу задач перед review
+MT-02,Прогнозна дата релізу P85,2026-12-11,lr09_forecast/forecast.csv,ST-01,пізніше 2026-12-25,скорочую обсяг релізу на 2 найнижчі за пріоритетом історії
+MT-03,Кількість відкритих ризиків з score 12+,4 ризики,lr11_risks_quality/risks.csv,ST-01,більше 5 ризиків зі score 12+,ескалюю топ-3 ризики замовнику і запускаю response plan для найвищого
+MT-04,Обсяг технічного боргу pay_now,14 годин,lr11_risks_quality/techdebt.csv,ST-08,більше 20 годин невиплаченого боргу pay_now,виділяю 30% місткості наступного спринта на погашення боргу
